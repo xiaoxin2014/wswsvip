@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_my_shop"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="?attr/actionBarSize"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/riv_header"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_head" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:padding="22dp"
+                    android:text="@string/click_login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_sub_title"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_general"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_radius_border"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/user_level_agent"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="enterAlways|enterAlwaysCollapsed">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/layout_title_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:drawableLeft="@mipmap/icon_message"
+                            android:onClick="onClick"
+                            android:padding="12dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_msg_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/message_dot"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/my"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_title" />
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:padding="12dp"
+                            android:src="@mipmap/shopping_car_tran" />
+
+                        <ImageView
+                            android:id="@+id/iv_shop_car_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/message_dot"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_withdrawals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_available_balance" />
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="58.5"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_title" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_arrow_right_soft"
+                    android:drawablePadding="2dp"
+                    android:text="@string/withdraw"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/earnings_today" />
+
+                <LinearLayout
+                    android:id="@+id/layout_profit_pending"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profit_pending" />
+
+                    <TextView
+                        android:id="@+id/tv_earn_pending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="58.5"
+                        android:textColor="@color/fontTitle"
+                        android:textSize="@dimen/font_title" />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/divide_v"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/earnings_pending" />
+
+                <LinearLayout
+                    android:id="@+id/layout_profit_today"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profit_today" />
+
+                    <TextView
+                        android:id="@+id/tv_earn_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="58.5"
+                        android:textColor="@color/fontTitle"
+                        android:textSize="@dimen/font_title" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/divide"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/allmoney" />
+
+                <LinearLayout
+                    android:id="@+id/layout_profit_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profit_total" />
+
+                    <TextView
+                        android:id="@+id/tv_accumulated_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="58.5"
+                        android:textColor="@color/fontTitle"
+                        android:textSize="@dimen/font_title" />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/divide_v"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/my_coin" />
+
+                <LinearLayout
+                    android:id="@+id/layout_my_coin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_coin" />
+
+                    <TextView
+                        android:id="@+id/tv_my_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="58.5"
+                        android:textColor="@color/fontTitle"
+                        android:textSize="@dimen/font_title" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/customer_order" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_my_address"
+                    style="@style/tv_arrow_right"
+                    android:drawableLeft="@mipmap/address"
+                    android:text="@string/my_address" />
+
+                <View
+                    style="@style/divide"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_customer_service_online"
+                    style="@style/tv_arrow_right"
+                    android:drawableLeft="@mipmap/customer_online"
+                    android:text="@string/customer_service_online"
+                    android:visibility="gone" />
+
+                <View
+                    style="@style/divide"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_code"
+                    style="@style/tv_arrow_right"
+                    android:drawableLeft="@mipmap/icon_invitor_code"
+                    android:text="@string/invitation_code" />
+
+                <View
+                    style="@style/divide"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_inviting_friend"
+                    style="@style/tv_arrow_right"
+                    android:drawableLeft="@mipmap/inviting_friend"
+                    android:text="@string/Invitation_friend" />
+
+                <View
+                    style="@style/divide"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_referee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:onClick="onClick">
+
+                    <TextView
+                        style="@style/tv_left_icon"
+                        android:drawableLeft="@mipmap/icon_referee"
+                        android:text="@string/referee" />
+
+                    <TextView
+                        android:id="@+id/tv_referee"
+                        style="@style/tv_arrow_right_soft"
+                        android:drawableRight="@null"
+                        android:text="--" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_divide"
+                    style="@style/divide"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_setting"
+                    style="@style/tv_arrow_right"
+                    android:drawableLeft="@mipmap/icon_setting"
+                    android:text="@string/my_setting" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

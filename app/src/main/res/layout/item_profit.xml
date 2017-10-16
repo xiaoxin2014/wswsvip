@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_white_h"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="销售提成(卖)"
+            android:textColor="@color/fontSubTile"
+            android:textSize="@dimen/font_content" />
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="￥99"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_content" />
+
+        <TextView
+            android:maxLines="2"
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="2017-8-19\n17:20:23"
+            android:textColor="@color/fontSubTile"
+            android:textSize="@dimen/font_content" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divide"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp" />
+</LinearLayout>

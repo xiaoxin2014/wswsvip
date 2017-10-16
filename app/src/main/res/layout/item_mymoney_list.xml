@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_weibi_bg"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@mipmap/weibi_bg_pink">
+
+    <RelativeLayout
+        android:layout_width="145dp"
+        android:layout_height="110dp">
+
+        <TextView
+            android:id="@+id/tv_money_num"
+            android:layout_width="145dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_largecontent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_renminbi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/tv_money_num"
+            android:gravity="right"
+            android:text="@string/ren_min_bi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_middlecontent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_money_num"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="未使用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_sub_title"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_share_weibi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weibi_share_gray"/>
+
+        <TextView
+            android:id="@+id/tv_weibi_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="邀请总代赠送的微币"
+            android:textColor="@color/color_text02"
+            android:textSize="@dimen/font_sub_title"/>
+
+        <TextView
+            android:id="@+id/tv_weibi_get_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="2017-08-17"
+            android:textColor="@color/fontSubTile"
+            android:textSize="@dimen/font_tips"/>
+
+    </LinearLayout>
+</RelativeLayout>

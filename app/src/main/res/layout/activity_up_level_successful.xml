@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.UpLevelSuccessfulActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/up_level_ok_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:src="@mipmap/up_level_ok" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/user_up_successful"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp" />
+
+    <TextView
+        style="@style/title_sub"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/user_up_successful_sub" />
+
+    <TextView
+        android:id="@+id/tv_go"
+        style="@style/btn_send"
+        android:text="@string/user_up_go" />
+
+</LinearLayout>

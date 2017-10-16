@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_empty_no_net"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="15dp"
+        android:drawableTop="@mipmap/empty_no_net"
+        android:gravity="center"
+        android:text="@string/net_connect_error"
+        android:textColor="@color/fontSoftText" />
+
+    <TextView
+        android:id="@+id/tv_empty_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shap_circle_red"
+        android:paddingBottom="6dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="6dp"
+        android:text="@string/reload"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

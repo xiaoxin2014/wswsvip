@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.activity.ShopCartActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_shop_car"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@null"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_select_all"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_shop_car"
+                    android:drawablePadding="5dp"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="@string/select_all"
+                    android:textColor="@color/fontTitle"
+                    android:textSize="@dimen/font_sub_title"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:orientation="vertical"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_sub_title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/freight_temp"
+                        android:textColor="@color/fontTitle"
+                        android:textSize="@dimen/font_content_small"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_shop_now"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/shopping_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_sub_title"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_empty_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_tip_title"
+                style="@style/title_small"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_shop_car_larger"
+                android:gravity="center"
+                android:text="@string/shop_car_empty"/>
+
+            <TextView
+                android:id="@+id/tv_tip"
+                style="@style/title_soft"
+                android:layout_marginTop="5dp"
+                android:text="@string/shop_car_empty_tip"/>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/shap_tv_border_black_transtale"
+                android:onClick="onClick"
+                android:paddingBottom="8dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:text="@string/login_going"
+                android:textColor="@color/fontTitle"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_no_net_cover"/>
+
+        <include layout="@layout/layout_bad_data_cover"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

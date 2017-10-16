@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="wswsvip">
+
+    </dbname>
+
+    <version value="18">
+
+    </version>
+
+    <list>
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.CategoryListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.SearchKeyBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.GoodsListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.ConversationListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.GoodsSpecListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.BrandListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.UsersListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.CityBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.AddressListBean" />
+        <mapping class="com.wdhhr.wswsvipnew.model.dataBase.ExpressBean" />
+    </list>
+</litepal>

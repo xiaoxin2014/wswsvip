@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.activity.MyWithdrawalsIntoActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/alipay_accounts"
+                    android:padding="8dp"
+                    android:text="支付宝账户"/>
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:text="23312323"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/withdraw_amount"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_unit"
+                        android:textColor="@color/fontTitlePrimary"
+                        android:textSize="40sp"/>
+
+                    <TextView
+                        android:id="@+id/edit_withdraw_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:textColor="@color/fontTitlePrimary"
+                        android:textSize="40sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/withdraw_balance_intro"/>
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_withdraw_all"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:onClick="onClick"-->
+                    <!--android:text="@string/withdraw_all"-->
+                    <!--android:textColor="@color/red_num"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_withdraw_send"
+                    style="@style/btn_send"
+                    android:text="@string/withdraw_confirm"/>
+
+                <TextView
+                    style="@style/title_soft"
+                    android:layout_marginTop="-12dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/withdraw_confirm_tip"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

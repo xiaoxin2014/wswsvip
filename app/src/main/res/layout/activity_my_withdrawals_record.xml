@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context="com.wdhhr.wswsvipnew.activity.MyWithdrawalsRecordActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <com.wdhhr.wswsvipnew.widget.XListView
+        android:id="@+id/lv_cash_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"/>
+
+    <include layout="@layout/layout_empty_fill"/>
+    <include layout="@layout/layout_bad_data_fill"/>
+    <include layout="@layout/layout_no_net_fill"/>
+
+</LinearLayout>

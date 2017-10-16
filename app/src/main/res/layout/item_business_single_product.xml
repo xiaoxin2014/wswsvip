@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="6dp"
+              android:paddingTop="6dp">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:padding="12dp"
+        android:src="@mipmap/top"/>
+
+    <ImageView
+        android:id="@+id/iv_goods_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/about_me"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_goods_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:text="单品"
+            android:textSize="@dimen/font_sub_title"/>
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="$66"
+            android:textSize="@dimen/font_sub_title"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_goods_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="库存"
+                android:textColor="@color/fontSoftText"
+                android:textSize="@dimen/font_sub_title"/>
+
+
+            <TextView
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:id="@+id/tv_share_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:drawableRight="@mipmap/share"
+                android:onClick="onClick"/>
+
+            <CheckBox
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:id="@+id/cb_add_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_share_goods"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_home_shop"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

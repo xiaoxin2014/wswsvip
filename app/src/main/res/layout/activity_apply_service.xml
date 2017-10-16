@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.ApplyServiceActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/title_small"
+                android:text="@string/apply_service_reason" />
+
+            <EditText
+                android:id="@+id/edit_reason"
+                style="@style/title_small"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/apply_service_hint"
+                android:maxLength="150"
+                android:minLines="5" />
+
+            <TextView
+                android:id="@+id/tv_reason_length"
+                style="@style/title_soft"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="end"
+                android:text="0/150" />
+
+            <View style="@style/divide" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title_small"
+                    android:layout_width="wrap_content"
+                    android:text="图片" />
+
+                <TextView
+                    style="@style/title_small"
+                    android:text="(此图片将作为退货凭证)"
+                    android:textColor="@color/fontSoftText" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_refund_fail_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/divide" />
+
+                <TextView
+                    style="@style/title_small"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/order_refund_fail_reason" />
+
+                <TextView
+                    android:id="@+id/tv_refund_fail_reason"
+                    style="@style/title_small" />
+
+                <TextView
+                    android:id="@+id/tv_apply_service"
+                    style="@style/btn_send"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:text="@string/apply_service_repeat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apply_service_tip" />
+
+                    <TextView
+                        android:id="@+id/tv_appeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/apply_service_appeal"
+                        android:textColor="#06f" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

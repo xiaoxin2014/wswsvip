@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_all_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/tv_order_title"
+            style="@style/tv_left_icon"
+            android:drawableLeft="@mipmap/icon_my_order"
+            android:text="@string/my_order" />
+
+        <TextView
+            style="@style/tv_arrow_right_soft"
+            android:textSize="13sp"
+            android:drawablePadding="2dp"
+            android:text="@string/all_order" />
+    </LinearLayout>
+
+    <View
+        style="@style/divide"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_pending_pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="onClick"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_order_pending_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/payment_pending"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3dp"
+                android:text="@string/pending_pay"
+                android:textColor="@color/fontTitle"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_corner_pending_pay"
+                style="@style/tv_corner"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divide_v"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_pending_shipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="onClick"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_order_pending_shipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/shipment_pending"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3dp"
+                android:text="@string/pending_shipment"
+                android:textColor="@color/fontTitle"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_corner_pending_shipment"
+                style="@style/tv_corner"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divide_v"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_shipped"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="onClick"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_order_shipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/shipped"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3dp"
+                android:text="@string/my_shipped"
+                android:textColor="@color/fontTitle"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_corner_shipment"
+                style="@style/tv_corner"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divide_v"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_customer_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="onClick"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_order_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_service"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3dp"
+                android:text="@string/my_service"
+                android:textColor="@color/fontTitle"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_corner_cancel"
+                style="@style/tv_corner"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

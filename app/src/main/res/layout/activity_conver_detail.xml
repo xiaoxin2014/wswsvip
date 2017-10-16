@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.ConverDetailActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_read_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:textColor="@color/fontSoftText"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_circle_message"
+                    android:drawablePadding="4dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/fontSoftText"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/cb_fabulous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_fabulous"
+                    android:drawablePadding="4dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/sel_cb_primary_soft"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_comment_title"
+                style="@style/layout_white_h"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divide" />
+
+                <TextView
+                    style="@style/title_small"
+                    android:layout_width="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="@string/selected_comment" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divide" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tv_more_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="18dp"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap_bg_gray_radius"
+            android:hint="@string/comment_input_tip"
+            android:paddingBottom="8dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/font_content" />
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="onClick"
+            android:padding="18dp"
+            android:text="@string/release"
+            android:textColor="@color/sel_text_primary_soft"
+            android:textSize="@dimen/font_sub_title" />
+
+    </LinearLayout>
+</LinearLayout>

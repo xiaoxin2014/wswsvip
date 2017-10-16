@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:fitsSystemWindows="true"
+                tools:context="com.wdhhr.wswsvipnew.activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar"/>
+
+        <TextView
+            android:id="@+id/tv_user_data"
+            style="@style/tv_arrow_right"
+            android:drawableLeft="@mipmap/inviting_friend"
+            android:text="@string/user_data"/>
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_about_me"
+            style="@style/tv_arrow_right"
+            android:drawableLeft="@mipmap/about_me"
+            android:text="@string/about_me"/>
+
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_law"
+            style="@style/tv_arrow_right"
+            android:drawableLeft="@mipmap/icon_law_rules"
+            android:text="@string/law_provisions"/>
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick">
+
+            <TextView
+                style="@style/tv_left_icon"
+                android:drawableLeft="@mipmap/icon_clear_cache"
+                android:text="@string/clear_cache"/>
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                style="@style/tv_arrow_right_soft"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick">
+
+            <TextView
+                style="@style/tv_left_icon"
+                android:drawableLeft="@mipmap/icon_version"
+                android:text="@string/setting_version"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/tv_arrow_right_soft"
+                android:drawablePadding="0dp"
+                android:drawableRight="@null"
+                android:text="v1.0.0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

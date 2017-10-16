@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.activity.ProfitActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        style="@style/layout_white_h"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/type"
+            android:textColor="@color/fontSubTile"
+            android:textSize="@dimen/font_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/amount_of_money"
+            android:textColor="@color/fontSubTile"
+            android:textSize="@dimen/font_content"/>
+
+        <TextView
+            android:id="@+id/tv_menu_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/arrival_time"
+            android:textColor="@color/fontSubTile"
+            android:textSize="@dimen/font_content"/>
+
+    </LinearLayout>
+
+    <com.wdhhr.wswsvipnew.widget.XListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:divider="@null"/>
+
+    <include layout="@layout/layout_empty_fill"/>
+
+    <include layout="@layout/layout_bad_data_fill"/>
+
+    <include layout="@layout/layout_no_net_fill"/>
+
+</LinearLayout>

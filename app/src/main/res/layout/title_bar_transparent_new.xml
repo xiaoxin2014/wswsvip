@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/fontTitlePrimary"
+        android:textSize="@dimen/font_title" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/title_back_black"
+        android:onClick="onClick"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tv_back_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/title_back"
+        android:onClick="onClick"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="14dp"
+        android:textColor="@color/fontTitle"
+        android:textSize="@dimen/font_sub_title" />
+
+</RelativeLayout>

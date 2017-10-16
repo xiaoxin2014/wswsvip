@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.wdhhr.wswsvipnew">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RegistActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ForgetPassWordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopInfomationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopManagerActivity"
+            android:label="@string/title_activity_shop_manager"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.GoodDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopSearchSubActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopRelationBindActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AddressGoodsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AddressAddActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyMoneyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SettingPersonalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SettingAboutMeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.LawClauseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PlatfromProtocolActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SettingPersonalNickNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyWithdrawalsIntoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".activity.MyWithdrawalsAlipayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyWithdrawalsRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopConnectAgentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BusinessContactNameEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopIntroEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopNameEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BrandDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ConverDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ConverCommentDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShopCartActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.OrderConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="wx7ddc386091092fce"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProfitActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyOrderListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.TradeSuccessfulActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WeibiShareDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WeibiShareRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LogisticsDetailActivity"/>
+        <activity android:name=".activity.ApplyServiceActivity"/>
+
+        <!-- 新浪： -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 微信： -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- qq完整版： -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="599d2c3d2ae85b2ed50015da"/>
+
+        <activity
+            android:name=".activity.LogisticsFillInActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activity.UpLevelActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.UpLevelSuccessfulActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <service android:name=".widget.update.DownloadService"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wdhhr.wswsvipnew.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+
+        <meta-data
+            android:name="com.wdhhr.wswsvipnew.utils.GlideConfiguration"
+            android:value="GlideModule"/>
+
+        <activity android:name=".activity.InvitationCodeActivity">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/settingperson"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.activity.SettingPersonalActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:onClick="onClick">
+
+        <TextView
+            style="@style/tv_arrow_right_soft"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:text="@string/header"
+            android:textColor="@color/fontTitle"/>
+
+        <ImageView
+            android:id="@+id/rv_header"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick">
+
+            <TextView
+                style="@style/tv_left_icon"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text="@string/nick_name"/>
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                style="@style/tv_arrow_right_soft"
+                android:text="XXX"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/tv_left_icon"
+                android:text="@string/phone_num"/>
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                style="@style/tv_arrow_right_soft"
+                android:drawableRight="@null"
+                android:text="13267166985"/>
+        </LinearLayout>
+
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/tv_left_icon"
+                android:text="@string/level"/>
+
+            <TextView
+                android:id="@+id/tv_level"
+                style="@style/tv_arrow_right_soft"
+                android:drawableRight="@null"
+                android:text="@string/user_level_agent"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_expire_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/tv_left_icon"
+                android:text="@string/expire_time"/>
+
+            <TextView
+                android:id="@+id/tv_expire_time"
+                style="@style/tv_arrow_right_soft"
+                android:drawableRight="@null"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/shap_white_radius"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:text="@string/log_out"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_sub_title"/>
+
+</LinearLayout>

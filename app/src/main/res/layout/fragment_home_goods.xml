@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.wdhhr.wswsvipnew.widget.XListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"/>
+
+    <View
+        android:id="@+id/view_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4000"
+        android:visibility="gone"/>
+
+
+    <include layout="@layout/layout_empty_cover"/>
+
+    <include layout="@layout/layout_bad_data_cover"/>
+
+    <include layout="@layout/layout_no_net_cover"/>
+
+</RelativeLayout>

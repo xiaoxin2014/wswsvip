@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_brand_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/about_me"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_below="@+id/iv_brand_icon"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/brand_name"
+            style="@style/title_small"
+            android:text="@string/brand"/>
+
+        <TextView
+            android:id="@+id/shop_num"
+            style="@style/title_soft"
+            android:layout_marginTop="10dp"
+            android:text="@string/onlineSalenum"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_add_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/sel_cb_home_shop"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_share_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/share"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

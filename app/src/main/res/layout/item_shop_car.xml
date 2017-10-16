@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_shop_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/sel_cb_shop_car"
+            android:paddingLeft="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv_goods_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_rob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7000"
+                android:drawableTop="@mipmap/rob"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/rob"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_sub_title"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="7dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/title_small"
+                android:ellipsize="end"
+                android:maxLines="2"/>
+
+            <LinearLayout
+                android:id="@+id/layout_edit_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_shop_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/sel_shop_num_sub"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_shop_num_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/fontTitle"
+                    android:textSize="@dimen/font_sub_title"/>
+
+                <TextView
+                    android:id="@+id/tv_shop_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/num_add_black"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title_sub"
+                    style="@style/title_soft"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_more_spec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/arrow_down"
+                    android:padding="8dp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_content"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/tv_shop_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/fontSoftText"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

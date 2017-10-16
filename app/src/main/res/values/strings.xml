@@ -1,0 +1,402 @@
+<resources>
+    <string name="app_name">我是微商VIP</string>
+
+    <!--common B-->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="money_unit">¥</string>
+    <string name="on_load">正在加载</string>
+    <string name="no_data">暂无任何数据</string>
+    <string name="net_connect_error">网络链接失败</string>
+    <string name="service_error">服务器出了点小问题，程序猿正在反省！</string>
+    <string name="bad_data_tip">获取数据异常</string>
+    <string name="reload">重新加载</string>
+    <string name="net_business">网络繁忙，请稍后再重新尝试</string>
+    <string name="user_up_level_tip">您为普通会员用户，需要升级为VIP才能登陆</string>
+    <string name="user_up_now">立即升级 (¥360/年)</string>
+    <string name="user_up">成为总代</string>
+    <string name="user_up_successful">恭喜您，升级为总代！</string>
+    <string name="user_up_successful_sub">开始您的创业之旅吧~！</string>
+    <string name="user_up_go">开启旅程</string>
+    <string name="filter_userid">0123456789xX</string>
+    <string name="filter_ali_acount">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_@.</string>
+    <!--common e-->
+
+    <!--main B-->
+    <string name="home">选品</string>
+    <string name="circle">微圈</string>
+    <string name="shop">店铺</string>
+    <string name="my">我的</string>
+
+    <!--login B-->
+    <string name="login_phone">请输入手机号码</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="agreement">《平台协议》</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="login_going">去登录</string>
+    <string name="login_check">登录即代表同意</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <!--login E-->
+
+    <!--forgetpassword B-->
+    <string name="forget_phone">请输入验证码</string>
+    <string name="forget_newpwd">设置6-18位新密码</string>
+    <string name="setting_pwd">设置6-18位密码</string>
+    <string name="finish">完成</string>
+    <string name="get_code">获取验证码</string>
+    <string name="gorget_show">显示</string>
+    <string name="gorget_pwd">忘记密码</string>
+    <string name="forget_graph">请输入图形码</string>
+    <string name="not_chinese">0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.</string>
+    <!--forgetpassword E-->
+
+    <!--ForgetPassWordActivity B -->
+    <string name="fotgetphontstr">手机号码不能为空</string>
+    <string name="fotgetcodestr">验证码不能为空</string>
+    <string name="fotgetgraphstr">图形码不能为空</string>
+    <string name="fotgetpwdstr">新密码不能为空</string>
+    <!--ForgetPassWordActivity E-->
+    <!--main E-->
+
+
+    <!--Home B-->
+    <string name="home_title">我是微商VIP</string>
+    <string name="hot_shop">火爆热销</string>
+    <string name="new_shop">新品推荐</string>
+    <string name="brand_shop">品牌专柜</string>
+    <string name="goods_list">商品列表</string>
+    <string name="price_cost"><Data><![CDATA[<font color="#ff2741">&#160;赚%s</font>]]></Data></string>
+    <string name="price">¥%s&#160;</string>
+    <string name="onlineSaleNum">在售人数 %s</string>
+    <string name="onlineSalenum">在售人数</string>
+    <string name="stockNum">库存 %s</string>
+    <string name="collection_cancel_tip">是否从店铺中移除？</string>
+
+    <!--Search B-->
+    <string name="search">搜索</string>
+    <string name="search_shop">搜索商品</string>
+    <string name="search_hot">热门搜索</string>
+    <string name="search_history">历史搜索</string>
+    <string name="search_clear">清空历史搜索</string>
+    <string name="search_all">全部</string>
+    <string name="search_sort_default">默认排序</string>
+    <string name="search_profit_desc">利润由高到低</string>
+    <string name="search_price_desc">价格由高到低</string>
+    <string name="search_price_asc">价格由低到高</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_shop_manager">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!--Search E-->
+
+    <!--GoodDetails B-->
+    <string name="share_earn">分享赚钱</string>
+    <string name="good_earn">交易成功后立返¥%s</string>
+    <string name="good_express">运费¥%s</string>
+    <string name="selected">已选</string>
+    <string name="specification_selection">规格选择</string>
+    <string name="good_details">商品详情</string>
+    <string name="guess_hobby">猜你喜欢</string>
+    <string name="in_the_end">已经到底了</string>
+    <string name="shopping">购买</string>
+    <string name="shopping_now">立即购买</string>
+    <string name="shopping_car_add">加入购物车</string>
+    <string name="shopping_num">购买数量</string>
+    <string name="sell">卖出</string>
+    <string name="spec">规格</string>
+    <string name="sold_out_tip">该款商品过于火爆，被抢光了~</string>
+    <!--GoodDetails E-->
+    <!--Home E-->
+
+    <!--MyFragment B-->
+    <string name="click_login">请点击登录</string>
+    <string name="user_level_common">普通用户</string>
+    <string name="user_level_agent">总代</string>
+    <string name="user_level_manager">经理</string>
+    <string name="user_level_founder">联合创始人</string>
+    <string name="my_available_balance">可用余额</string>
+    <string name="withdraw">提现</string>
+    <string name="withdraw_on">待处理</string>
+    <string name="withdraw_success">已到账</string>
+    <string name="withdraw_fail">提现失败</string>
+    <string name="alipay_bind">绑定支付宝</string>
+    <string name="alipay_bind_tip">确认您的资料填写正确并提交吗，仅有一次绑定机会哦！</string>
+    <string name="record_title">提现记录</string>
+    <string name="withdraw_balance_intro">当前用户可用余额%s元</string>
+    <string name="withdraw_all">全部提现</string>
+    <string name="withdraw_confirm">确认提现</string>
+    <string name="withdraw_confirm_tip">提现说明：一天只能申请提现1次，提现金额不小于10元且每次需全部提出，1-3个工作日到账，周六周日同样受理提现。</string>
+    <string name="withdraw_amount">提现金额</string>
+    <string name="my_order">我的订单</string>
+    <string name="all_order">全部订单</string>
+    <string name="my_address">收货地址</string>
+    <string name="address_empty_tip">请添加收货地址</string>
+    <string name="create_address">新建地址</string>
+    <string name="local_empty_tip">省 市 区</string>
+    <string name="customer_service_online">在线客服</string>
+    <string name="Invitation_friend">邀请好友</string>
+    <string name="my_setting">设置</string>
+    <string name="invitation_code">邀请码</string>
+    <string name="invitation_code_tip">邀请码(长按复制)</string>
+    <string name="my_payment_pending">待收款</string>
+    <string name="pending_pay">待付款</string>
+    <string name="pending_shipment">待发货</string>
+    <string name="my_shipped">已发货</string>
+    <string name="my_service">售后</string>
+    <string name="profit_pending">待收益</string>
+    <string name="profit_already">已收益</string>
+    <string name="profit_today">今日收益</string>
+    <string name="profit_total">累计收益</string>
+    <string name="sales_commission">销售提成</string>
+    <string name="profit_buy"><Data><![CDATA[销售提成(<font color="#ff2741">买</font>)]]></Data></string>
+    <string name="profit_sell"><Data><![CDATA[销售提成(<font color="#ff2741">卖</font>)]]></Data></string>
+    <string name="my_coin">我的微币</string>
+    <string name="referee">推荐人</string>
+    <string name="shop_car">购物车</string>
+    <string name="shop_car_empty">购物车是空的</string>
+    <string name="shop_car_empty_tip">去给自己添点什么吧</string>
+    <string name="shop_car_empty_tip_login">您还没有登录，赶紧去登录吧</string>
+    <string name="select_all">全选</string>
+    <string name="rob">抢光了</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="delete_tip">请确认是否删除</string>
+
+    <!--地址相关-->
+    <string name="address_edit">编辑地址</string>
+    <string name="address_create">新增地址</string>
+    <string name="default_">默认</string>
+
+    <!--订单界面  B-->
+    <string name="order_confirm">确认订单</string>
+    <string name="order_commit">提交订单</string>
+    <string name="total_amount">总金额：¥%s</string>
+    <string name="freight">(运费：%s)</string>
+    <string name="freight_temp">(运费：¥0.00)</string>
+    <string name="freight_simple">运费</string>
+    <string name="total_money">¥%s</string>
+    <string name="remarks">备注</string>
+    <string name="remarks_order_confirm_tips">嘱咐点什么吧！</string>
+    <string name="goods_amount">商品金额</string>
+    <string name="micro_currency_deduction">微币抵扣</string>
+    <string name="total_amount_simple">总金额</string>
+    <string name="pay_mode">支付方式</string>
+    <string name="pay_weChat">微信支付</string>
+    <string name="pay_ali">支付宝支付</string>
+    <string name="pay_confirm">确认付款</string>
+    <string name="pay_need">需付款</string>
+    <string name="all">全部</string>
+    <string name="order_no">订单号：</string>
+    <string name="trade_successful">交易成功</string>
+    <string name="order_info">共计%1$s件商品 合计：¥%2$s(运费¥%3$s)</string>
+    <string name="order_price_num">¥%1$s\n×%2$s</string>
+    <string name="view_logistics">查看物流</string>
+    <string name="apply_service">申请售后</string>
+    <string name="apply_service_repeat">重新申请售后</string>
+    <string name="apply_service_reason">查看退货原因</string>
+    <string name="apply_service_tip">有异议</string>
+    <string name="apply_service_appeal"><u>我要申诉</u></string>
+    <string name="apply_service_hint">请在此处说明您的退货理由</string>
+    <string name="order_apply_service">申请退款</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_view">查看订单</string>
+    <string name="order_cancel">删除订单</string>
+    <string name="order_cancel_tip">请确认是否删除订单</string>
+    <string name="order_status">订单状态</string>
+    <string name="order_create_time">下单时间：</string>
+    <string name="order_pay_time">付款时间：</string>
+    <string name="order_status_pending_shipment">等待商家发货</string>
+    <string name="order_status_pending_pay">等待买家付款</string>
+    <string name="order_status_shipped">商家已发货</string>
+    <string name="order_status_refund_successful">退款成功</string>
+    <string name="order_status_refund_successful_tip_orange">成功退款¥</string>
+    <string name="order_status_refund_successful_tip_black">，已退回付款账户</string>
+    <string name="order_status_refund_agree">商家已同意退货</string>
+    <string name="order_status_refund_fail">退款失败</string>
+    <string name="order_refund_fail_result">查看失败原因</string>
+    <string name="order_refund_fail_reason">失败原因</string>
+    <string name="order_status_refund_time_tip">还剩%1$s天 %2$s</string>
+    <string name="order_status_refunding">申请退货</string>
+    <string name="order_status_on_return">退货中</string>
+    <string name="order_status_refunding_express">查看已填写物流信息</string>
+    <string name="order_status_refunding_tip">请耐心等待商家处理</string>
+    <string name="order_status_cancel">订单已取消</string>
+    <string name="logistics_detail_empty">暂无物流信息</string>
+    <string name="logistics_detail_none">快件等待发出，请耐心等候</string>
+    <string name="logistics_fill_in">填写物流信息</string>
+    <string name="logistics_fill_in_tips">请尽快把商品退回到该地址</string>
+    <string name="logistics_detail_tip">物流状态实时跟踪</string>
+    <string name="logistics_detail">物流详情</string>
+    <string name="logistics_info">物流信息</string>
+    <string name="logistics_company_name">承运来源：</string>
+    <string name="logistics_select">选择快递</string>
+    <string name="logistics_select_tip">请选择快递</string>
+    <string name="logistics_fill_in_num">填写物流编号</string>
+    <string name="logistics_no">运单编号:</string>
+    <string name="max_withdraw">提现金额不能超过5万</string>
+    <string name="over_max_withdraw">金额已超出可提现余额</string>
+    <string name="mix_withdraw">提现金额不能低于10元</string>
+    <!--订单界面  E-->
+
+    <!--收益 B-->
+    <string name="type">类别</string>
+    <string name="amount_of_money">金额</string>
+    <string name="arrival_time">到帐时间</string>
+    <string name="arrival_time_forecast">预计到帐时间</string>
+    <!--收益 E-->
+
+    <!--我的微币 B-->
+    <string name="share_record">分享记录</string>
+    <string name="share_detail">分享详情</string>
+    <string name="method_get">获取方法</string>
+    <string name="method_used">使用方法</string>
+    <string name="coin_rule">微币规则</string>
+    <string name="coin_rule_detail">1.平台活动赠送；2.其他会员转赠</string>
+    <string name="coin_rule_detail2">1.购物抵扣，每次只能使用一张；\n2.不可抵扣总代升级费用；\n3.不可抵扣特价商品；\n4.当商品的价格小于微币的价格时，不可使用；\n5.每张微币的有效期为三个月；</string>
+    <string name="weibi_get_time">%s(获得)</string>
+    <string name="unused">可使用</string>
+    <string name="used">已使用</string>
+    <string name="already_get">已领取</string>
+    <string name="un_get">未领取</string>
+    <string name="out_of_date">已过期</string>
+    <string name="already_return">未过期</string>
+    <string name="already_share">已分享</string>
+    <string name="already_share_time">已分享%d次微币</string>
+    <string name="weibi_share_num">¥%d微币</string>
+    <string name="friend_send">好友赠送</string>
+    <string name="system_send">系统赠送</string>
+    <string name="share_return">被退回的</string>
+    <string name="mine_share">我分享的</string>
+    <string name="weibi">微币</string>
+    <string name="weibi_none">无微币可抵扣</string>
+    <string name="law_clause_content"><Data><![CDATA[<font color="#ff2741">注意:</font>使用本网站前请您仔细阅读以下条款。使用本网站则表明您已明知并接受这些条款。如果不接受这些条款请不要使用本网站。]]></Data></string>
+
+    <!--我的微币 E-->
+
+    <!--Setting B-->
+    <string name="setting_version">当前版本</string>
+    <string name="setting">设置</string>
+    <string name="user_data">个人资料</string>
+    <string name="about_me">关于我们</string>
+    <string name="law_provisions">法律条款</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="header">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="phone_num">手机号</string>
+    <string name="region">地区</string>
+    <string name="level">级别</string>
+    <string name="expire_time">会员到期时间</string>
+    <string name="log_out">退出登录</string>
+    <string name="log_out_tips">请确认是否退出登录？</string>
+    <string name="about_me_content">我是微商是有我的合伙人网络科技（深圳）有限公司于2017年创立，是国内第一家致力于解决微商货源、社交、教育、分销的综合一站式服务平台，提供更丰富多样的货源，更低的价格，更完善的制度，更低的创业门槛，响应国家大众创业旗号，携手千万微商，一起实现创业致富梦。</string>
+    <string name="copyright">Copyright©2017-2018\n我的合伙人网络科技（深圳）有限公司</string>
+    <!--Setting E-->
+
+    <!--MyFragment E-->
+
+    <!--ShopFragment B-->
+    <string name="shop_today_order">今日订单</string>
+    <string name="shop_today_visit">今日访问</string>
+    <string name="shop_sum_visit">累计访问</string>
+    <string name="shop_sum_money">累计销售额</string>
+    <string name="shop_manager">店铺管理</string>
+    <string name="order">排序</string>
+    <string name="brand">品牌</string>
+    <string name="single_product">单品</string>
+    <string name="customer">客户订单</string>
+    <string name="customer_service">客户售后</string>
+    <string name="order_service">售后订单</string>
+    <string name="shop_fans">粉丝人数</string>
+    <string name="bind_time">绑定时间：%S</string>
+    <string name="shop_sale_record">销售记录</string>
+    <string name="shop_connect_agent">连接总代</string>
+    <string name="shop_share">分享店铺</string>
+    <string name="shopinfo_infomation">店铺信息</string>
+    <string name="shop_name">店名</string>
+    <string name="business_contact_name">店主</string>
+    <string name="business_name_after">的店铺</string>
+    <string name="shop_intro">店铺介绍</string>
+    <string name="complete">完成</string>
+    <string name="limit_textnum">/150</string>
+    <string name="limit_maxnum">150</string>
+
+
+    <!--ShopFragment E-->
+
+    <!--Circle 微圈 B-->
+    <string name="read">阅读%d</string>
+    <string name="up_conversation_tips">亲，您已经点过赞了！</string>
+    <string name="detail">详情</string>
+    <string name="comment_input_tip">期待您的精彩评论</string>
+    <string name="selected_comment">精选留言</string>
+    <string name="reply">%d回复</string>
+    <string name="more_comment">更多评论(%d)</string>
+    <string name="all_comment">全部评论</string>
+    <string name="release">发布</string>
+    <string name="comment">评论</string>
+    <string name="camera">拍照</string>
+    <string name="photo">从手机相册选择</string>
+    <string name="weibi_share_record">分享记录</string>
+    <string name="ren_min_bi">¥</string>
+    <string name="continue_share">继续分享红包</string>
+    <string name="get_time">截止时间</string>
+    <string name="ensure_cancle_collect">确认取消收藏吗？</string>
+    <string name="share">分享</string>
+    <string name="share_content"><Data><![CDATA[只要您的好友通过您的链接购买此商品，您就可以赚到<font color="#ff2741">%s</font>元的收益哦]]></Data></string>
+    <string name="normal_user">普通用户</string>
+    <string name="general_agency">总代</string>
+    <string name="manager">经理</string>
+    <string name="originator">联合创始人</string>
+    <string name="direct_push_num">直推(%s)</string>
+    <string name="between_push_num">间推(%s)</string>
+    <string name="relation_bind_num">粉丝人数(%d)</string>
+    <string name="cancle">取消</string>
+    <string name="two_dimension_code">二维码</string>
+    <string name="goods_two_dimension_code">商品二维码</string>
+    <string name="share_brand_subtitle">好的东西总是忍不住分享给身边的人</string>
+    <string name="share_weibi_title_front">【%s】赠送了您</string>
+    <string name="share_weibi_title_behind">%d元购物抵扣币</string>
+    <string name="share_weibi_subtitle">我带上你，你带上抵扣币，享受优惠购物的快感</string>
+    <string name="share_shop_title">%s的小店</string>
+    <string name="share_shop_subtitle">汇聚全球微商优品</string>
+    <string name="share_goods_subtitle">超值好货不容错过，快点击领取</string>
+    <string name="share_circle_subtitle">据说看完此文章的人，性感指数增加30%~！</string>
+    <string name="unsetting">未设置</string>
+    <string name="law_clause">法律条款</string>
+    <string name="platform_protocol">平台协议</string>
+    <string name="headicon_permission_denied">应用权限已被您拒绝，是否打开应用详情手动获取?</string>
+    <string name="pwd_update_success">已成功修改密码</string>
+    <string name="comment_validate">您的评论已提交审核，请稍等片刻</string>
+    <string name="secret_text">隐藏</string>
+    <string name="light_text">显示</string>
+    <string name="comfirm_pwd">请确认密码</string>
+    <string name="clear_all_history">清空历史搜索</string>
+    <string name="confirm_clear_all_history">确认删除全部历史记录？</string>
+    <string name="train_money">培训津贴</string>
+    <string name="save_to_gallery">保存图片到相册</string>
+
+
+    <!--Circle 微圈 E-->
+
+    <!--版本更新-->
+    <string name="android_auto_update_dialog_title">我是微商VIP新版本提醒</string>
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_dialog_btn_download">立即升级</string>
+    <string name="android_auto_update_dialog_btn_cancel">暂不升级</string>
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+</resources>

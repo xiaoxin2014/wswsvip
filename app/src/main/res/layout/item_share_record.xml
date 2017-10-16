@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="68dp"
+              android:layout_marginBottom="12dp"
+              android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/mymoney_share_record"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_share_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_money_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20微币"
+                android:textColor="@color/color_text02"
+                android:textSize="@dimen/font_content"/>
+
+            <TextView
+                android:id="@+id/tv_share_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2017-08-17"
+                android:textColor="@color/fontSoftText"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_get_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_arrow_right"
+            android:text="未领取"
+            android:textSize="@dimen/font_content"/>
+    </RelativeLayout>
+</LinearLayout>

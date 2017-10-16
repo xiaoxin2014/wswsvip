@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout style="@style/layout_white_h">
+
+            <TextView
+                android:id="@+id/tv_order_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/fontTitle"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_content_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_goods_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tv_order_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="end"
+            android:textColor="@color/fontTitle"
+            android:textSize="@dimen/font_content_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_h"
+        android:layout_marginTop="1dp"
+        android:gravity="end|center_vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_bottom_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontOrange"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_bottom_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontTitle"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_bottom_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shap_tv_border_black"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:padding="5dp"
+            android:text="取消订单"
+            android:textColor="@color/fontTitle" />
+
+        <TextView
+            android:id="@+id/tv_bottom_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shap_tv_border_black"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:padding="5dp"
+            android:text="申请售后"
+            android:textColor="@color/fontTitle" />
+
+        <TextView
+            android:id="@+id/tv_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shap_tv_border"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:padding="5dp"
+            android:text="付款"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+</LinearLayout>

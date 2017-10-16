@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_transparent_icon" />
+
+    <ListView
+        android:id="@+id/address_goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <include layout="@layout/layout_empty_fill" />
+
+    <include layout="@layout/layout_bad_data_fill" />
+
+    <include layout="@layout/layout_no_net_fill" />
+
+    <View style="@style/divide" />
+
+    <RelativeLayout
+        android:id="@+id/address_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/my_address_add"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/create_address"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_sub_title" />
+
+    </RelativeLayout>
+
+</LinearLayout>

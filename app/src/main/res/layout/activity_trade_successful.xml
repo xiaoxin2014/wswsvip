@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.TradeSuccessfulActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/title"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:drawablePadding="15dp"
+                android:drawableTop="@mipmap/pay_successful"
+                android:gravity="center"
+                android:text="@string/trade_successful" />
+
+            <TextView
+                android:id="@+id/tv_order_view"
+                style="@style/btn_send"
+                android:text="@string/order_view" />
+
+            <LinearLayout
+                style="@style/layout_white_h"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divide" />
+
+                <TextView
+                    style="@style/title_small"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@mipmap/icon_guess_hobby"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="@string/guess_hobby" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divide" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_promotion"
+                style="@style/layout_white_h"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_h"
+                android:background="#0000"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divide" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/title_small"
+                    android:layout_width="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="@string/in_the_end" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divide" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

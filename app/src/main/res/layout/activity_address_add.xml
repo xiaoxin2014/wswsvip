@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.AddressAddActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_address_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:hint="姓名"
+            android:padding="10dp"
+            android:textColor="@color/color_text02"
+            android:textColorHint="@color/fontSoftText"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp" />
+
+        <EditText
+            android:id="@+id/et_address_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:hint="手机号"
+            android:maxLength="11"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/color_text02"
+            android:textColorHint="@color/fontSoftText"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/tv_add_city"
+            style="@style/tv_arrow_right"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="@string/local_empty_tip"
+            android:textColor="@color/fontSoftText" />
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp" />
+
+
+        <EditText
+            android:id="@+id/et_address_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:hint="详细地址"
+            android:padding="10dp"
+            android:textColor="@color/color_text02"
+            android:textColorHint="@color/fontSoftText"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/et_address_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="设为默认地址"
+            android:textColor="@color/fontSoftText"
+            android:textSize="15sp" />
+
+        <ToggleButton
+            android:id="@+id/address_slidebutton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:button="@drawable/sel_cb_switch"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shap_white_radius"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="@string/delete"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_sub_title" />
+</LinearLayout>

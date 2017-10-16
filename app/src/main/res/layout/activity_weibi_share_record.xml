@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.activity.WeibiShareRecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/mymoney_share_record_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <ImageButton
+                    android:id="@+id/ib_share_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:onClick="onClick"
+                    android:padding="12dp"
+                    android:src="@mipmap/title_back"/>
+
+                <TextView
+                    android:id="@+id/tv_share_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/weibi_share_record"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_title"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_renminbi"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_share_money"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/tv_share_money"
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="@string/ren_min_bi"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_middlecontent"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_share_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_largecontent"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_share_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_head"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_share_record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/fontSofterText"
+        android:dividerHeight="0.5px"
+        android:padding="12dp"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:id="@+id/layout_share_detail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_head"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_user_photo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/color_text02"
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="沈东辉"
+                    android:textSize="@dimen/font_content"/>
+
+                <TextView
+                    android:id="@+id/tv_weibi_get_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2017-08-17"
+                    android:textColor="@color/fontSoftText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/color_text02"
+                    android:id="@+id/tv_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/already_get"
+                    android:textSize="@dimen/font_content"/>
+
+                <TextView
+                    android:id="@+id/tv_weibi_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:text="10微币"
+                    android:textColor="@color/fontSoftText"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

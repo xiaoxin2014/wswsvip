@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/layout_white_h">
+
+        <TextView
+            android:id="@+id/tv_pw_cancel"
+            style="@style/title_small"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:onClick="onClick"
+            android:text="@string/cancel" />
+
+        <TextView
+            style="@style/title_small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/logistics_select_tip" />
+
+        <TextView
+            android:id="@+id/tv_pw_confirm"
+            style="@style/title_small"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text="@string/confirm"
+            android:onClick="onClick"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <com.wdhhr.wswsvipnew.widget.wheelview.WheelView
+        android:id="@+id/wv_pw_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp" />
+
+</LinearLayout>

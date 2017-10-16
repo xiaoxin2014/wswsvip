@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.LogisticsFillInActivity">
+
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        style="@style/layout_white_h"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout style="@style/layout_white_h">
+
+            <TextView
+                style="@style/title_small"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/order_status_refund_agree" />
+
+            <TextView
+                android:id="@+id/tv_logistics_time"
+                style="@style/title_small"
+                android:layout_width="wrap_content"
+                android:text="请在2天之内退货（含当天）"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <View
+            style="@style/divide"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            style="@style/title_small"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/logistics_fill_in_tips" />
+
+        <TextView
+            android:text="13580514346（售后部）\n广东省深圳市龙岗区平湖街道DCC文化创意园1栋1楼（我是微商）"
+            android:id="@+id/tv_logistics_detail"
+            style="@style/title_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_h"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_logistics_select"
+            style="@style/tv_arrow_right"
+            android:text="@string/logistics_select"
+            android:onClick="onClick"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/fontSoftText" />
+
+        <View
+            style="@style/divide"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp" />
+
+        <EditText
+            android:id="@+id/edit_logistics_num"
+            style="@style/title_small"
+            android:background="@null"
+            android:hint="@string/logistics_fill_in_num"
+            android:padding="12dp"
+            android:textColorHint="@color/fontSoftText" />
+    </LinearLayout>
+
+</LinearLayout>

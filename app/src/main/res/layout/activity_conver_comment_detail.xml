@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.ConverCommentDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/comment"
+            android:textColor="@color/fontTitlePrimary"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_comment_close"
+            android:onClick="onClick"
+            android:padding="12dp" />
+    </RelativeLayout>
+
+    <View style="@style/divide" />
+
+    <com.wdhhr.wswsvipnew.widget.XListView
+        android:id="@+id/xlv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:layout_weight="1" />
+
+    <include layout="@layout/layout_bad_data_fill" />
+
+    <include layout="@layout/layout_no_net_fill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap_bg_gray_radius"
+            android:hint="@string/comment_input_tip"
+            android:paddingBottom="8dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/font_content" />
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="onClick"
+            android:padding="18dp"
+            android:text="@string/release"
+            android:textColor="@color/sel_text_primary_soft"
+            android:textSize="@dimen/font_sub_title" />
+
+    </LinearLayout>
+
+</LinearLayout>

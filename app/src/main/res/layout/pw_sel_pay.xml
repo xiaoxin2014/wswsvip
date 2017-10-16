@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/title_small"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/pay_mode" />
+
+        <TextView
+            android:id="@+id/tv_pw_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableRight="@mipmap/icon_comment_close"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:paddingTop="4dp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:paddingTop="3dp">
+
+        <RadioButton
+            android:id="@+id/rb_wechat"
+            style="@style/title_small"
+            android:layout_marginTop="3dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@mipmap/pay_wechat"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/sel_rb_pay"
+            android:onClick="onClick"
+            android:padding="12dp"
+            android:text="@string/pay_weChat" />
+
+        <View
+            style="@style/divide"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp" />
+
+        <RadioButton
+            android:id="@+id/rb_ali"
+            style="@style/title_small"
+            android:layout_marginTop="3dp"
+            android:button="@null"
+            android:drawableLeft="@mipmap/pay_ali"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/sel_rb_pay"
+            android:onClick="onClick"
+            android:padding="12dp"
+            android:text="@string/pay_ali" />
+
+        <View
+            style="@style/divide"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/title_small"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="@string/pay_need" />
+
+            <TextView
+                android:id="@+id/tv_pw_amount"
+                style="@style/title_small"
+                android:layout_width="wrap_content"
+                android:padding="12dp"
+                android:text="￥99.00" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:id="@+id/tv_pay_send"
+            style="@style/btn_send"
+            android:text="@string/pay_confirm" />
+    </LinearLayout>
+
+
+</LinearLayout>

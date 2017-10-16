@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.fragment.BetweenPushFragment">
+
+    <com.wdhhr.wswsvipnew.widget.XListView
+        android:id="@+id/listview_between_push"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f5f5f5"
+        android:dividerHeight="1px"
+        android:scrollbars="none"/>
+
+    <include layout="@layout/layout_empty_fill"/>
+
+    <include layout="@layout/layout_bad_data_fill"/>
+
+    <include layout="@layout/layout_no_net_fill"/>
+</LinearLayout>
+

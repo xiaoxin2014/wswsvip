@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.wdhhr.wswsvipnew.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:id="@+id/divide"
+        style="@style/divide"/>
+
+    <RadioGroup
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/main_rb"
+            android:checked="true"
+            android:drawableTop="@drawable/sel_rb_home"
+            android:text="@string/home"/>
+
+        <RadioButton
+            android:id="@+id/rb_circle"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/sel_rb_circle"
+            android:text="@string/circle"/>
+
+        <RadioButton
+            android:id="@+id/rb_shop"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/sel_rb_shop"
+            android:text="@string/shop"/>
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/main_rb"
+            android:drawableTop="@drawable/sel_rb_my"
+            android:text="@string/my"/>
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wdhhr.wswsvipnew.activity.LogisticsDetailActivity">
+
+    <include layout="@layout/title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout style="@style/layout_white_h">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logistics_company_name"
+                android:textColor="@color/fontTitle"
+                android:textSize="@dimen/font_sub_title" />
+
+            <TextView
+                android:id="@+id/tv_logistics_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_sub_title" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_logistics_name2"
+            style="@style/title_soft"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:text="@string/logistics_company_name"
+            android:textSize="@dimen/font_tips" />
+
+        <TextView
+            android:id="@+id/tv_logistics_no"
+            style="@style/title_soft"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:text="@string/logistics_no"
+            android:textSize="@dimen/font_tips" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title_small"
+            android:drawableLeft="@mipmap/logistics"
+            android:drawablePadding="7dp"
+            android:padding="12dp"
+            android:text="@string/logistics_detail_tip" />
+
+        <ListView
+            android:id="@+id/lv_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>

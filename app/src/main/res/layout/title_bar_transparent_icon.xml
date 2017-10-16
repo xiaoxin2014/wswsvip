@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:id="@+id/layout_title_bg"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/icon_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:onClick="onClick"
+        android:padding="12dp"
+        android:src="@mipmap/icon_message"/>
+
+    <TextView
+        android:id="@+id/title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_title"/>
+
+    <TextView
+        android:id="@+id/icon_text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/icon_title_right"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:src="@mipmap/my_shop"
+        android:text="多少度的"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/icon_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:src="@mipmap/my_shop"/>
+</RelativeLayout>

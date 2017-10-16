@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff2741</color>
+    <color name="colorPrimaryDark">#ff2741</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAvailable_balance">#424242</color>
+    <color name="colorPrimaryDarker">#FD4360</color>
+
+
+    <!--弱文字颜色-->
+    <color name="fontSoftText">#b8b8b8</color>
+    <color name="fontSofterText">#6fb8b8b8</color>
+    <color name="flowTextbg">#1faaaaaa</color>
+    <!--标题正黑颜色-->
+    <color name="fontTitle">#424242</color>
+    <!--主标题颜色-->
+    <color name="fontTitlePrimary">#141c1e</color>
+    <!--副标题深灰-->
+    <color name="fontSubTile">#a4a4a4</color>
+    <color name="fontOrange">#ff6905</color>
+    <!--背景颜色-->
+    <color name="background">#f5f5f5</color>
+    <!--背景灰-->
+    <color name="background_gray">#f3f3f3</color>
+    <!--分割线颜色-->
+    <color name="divide">#eee</color>
+    <!--白色-->
+    <color name="white">#ffff</color>
+    <!--浅白色-->
+    <color name="soft_white">#9fffffff</color>
+    <!--淡黄色-->
+    <color name="soft_yellow">#CFAC60</color>
+    <!--浅白色-->
+    <color name="shallowwhite">#dfffffff</color>
+    <!--不点点击灰-->
+    <color name="color_unable">#DCDCDC</color>
+
+    <!--以下是原色彩-->
+
+    <!--数字红色-->
+    <color name="red_num">#ff2741</color>
+    <!--价格红-->
+    <color name="color_price">#ff2741</color>
+    <!--总价格红-->
+    <color name="color_allprice">#f40a0b</color>
+    <!--二级字体颜色-->
+    <color name="color_text02">#141c1e</color>
+    <!--三级字体颜色-->
+    <color name="color_text03">#4a4a4a</color>
+    <!--三级字体颜色-->
+    <color name="color_text04">#a4a4a4</color>
+
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <!--透明-->
+    <color name="transparent">#CCCCCC</color>
+
+    <!--banner B-->
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <!--banner E-->
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_push_headicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_head"/>
+
+
+    <TextView
+        android:id="@+id/tv_push_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_push_headicon"
+        android:text="风吹麦浪"
+        android:textSize="@dimen/font_content"/>
+
+
+    <TextView
+        android:id="@+id/bt_userleverl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/background"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="总代理"
+        android:textColor="@color/fontSubTile"
+        android:textSize="@dimen/font_content_small"/>
+</RelativeLayout>
